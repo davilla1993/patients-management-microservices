@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.follysitou</groupId>
-	<artifactId>integration-tests</artifactId>
+	<artifactId>infrastructure</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>integration-tests</name>
-	<description>Integration test for patients management microservices </description>
+	<name>infrastructure</name>
+	<description>Infrastructure for deployment </description>
 	<url/>
 	<licenses>
 		<license/>
@@ -34,23 +34,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>5.5.1</version>
-			<scope>test</scope>
+			<groupId>software.amazon.awscdk</groupId>
+			<artifactId>aws-cdk-lib</artifactId>
+			<version>2.162.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter</artifactId>
-			<version>5.8.2</version>
-			<scope>test</scope>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>1.12.774</version>
 		</dependency>
 	</dependencies>
 
